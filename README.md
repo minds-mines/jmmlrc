@@ -57,4 +57,15 @@ jmmlrc = JMMLRC(gamma1 = 1e-5, gamma2 = .01, gamma3 = 100)
 ```
 
 ## Citation
-TODO
+```
+@article{brand2019joint,
+  title={Joint Multi-Modal Longitudinal Regression and Classification for Alzheimer’s Disease Prediction},
+  author={Brand, Lodewijk and Nichols, Kai and Wang, Hua and Shen, Li and Huang, Heng},
+  journal={IEEE Transactions on Medical Imaging},
+  volume={39},
+  number={6},
+  pages={1845--1855},
+  year={2019},
+  publisher={IEEE}
+}
+```
