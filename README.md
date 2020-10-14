@@ -57,6 +57,7 @@ jmmlrc = JMMLRC(gamma1 = 1e-5, gamma2 = .01, gamma3 = 100)
 ```
 
 ## Citation
+If you find this code useful in your research, please consider citing:
 ```
 @article{brand2019joint,
   title={Joint Multi-Modal Longitudinal Regression and Classification for Alzheimer’s Disease Prediction},
