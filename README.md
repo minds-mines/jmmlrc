@@ -1,27 +1,30 @@
 # jmmlrc
+
 Joint Multi-Modal Longitudinal Regression and Classification (JMMLRC) Estimator
 
 This repository contains the code for performing a classification and a regression task at the same time on longitudinal data. This work has been applied to the ADNI dataset and has shown state-of-the-art performance in predicting patients with and without Alzheimer's Disease.
 
-## Getting Started
-In order to set up your environment you need to install [pipenv](https://pipenv.readthedocs.io/en/latest)
+## Getting Started using Conda
 
-```bash
+In order to set up your environment you must first install [conda](https://docs.conda.io/projects/conda/en/latest/index.html). Once this is done follow these commands to setup your environment.
+
+```
 cd jmmlrc
-pipenv install
-pipenv shell
+conda create --name jmmlrc python=3.7 --file requirements.txt 
+conda activate jmmlrc
 ```
 
-Once you have started the pipenv environment you can run all associated tests with the following:
+Once you have activated the `jmmlrc` conda environment you can run all associated tests with the following:
 
-```bash
-python setup.py test
+```
+pytest test_jmmlrc_estimator.py
 ```
 
-The code located in `tests/test_estimator.py` illustrates how the `JMMLRC` estimator can be used in practice. 
+The test cases in `test_jmmlrc_estimator.py` show how the `JMMLRC` estimator can be used in practice (e.g. fit, predict, hyperparameter tuning, etc.) 
 
 ## Experiment Hyperparameters
-In our recent Transactions on Medical Imaging submission we compare our method to the an array of machine learning algorithms with the following settings:
+
+In our TMI submission titled "Joint Multi-Modal Longitudinal Regression and Classification for Alzheimer’s Disease Prediction" we compare our method to the an array of machine learning algorithms with the following settings:
 
 ### Regression
 ```python

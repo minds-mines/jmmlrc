@@ -3,12 +3,12 @@ import numpy as np
 from sklearn.svm import LinearSVC
 from sklearn.metrics import hinge_loss
 
-from jmmlrc.norms import l21_norm
-from jmmlrc.norms import group_norm
-from jmmlrc.norms import trace_norm
+from norms import l21_norm
+from norms import group_norm
+from norms import trace_norm
 
-from jmmlrc.utils import GroupedX
-from jmmlrc.utils import JointRC
+from utils import GroupedX
+from utils import JointRC
 
 class JMMLRC:
     def __init__(self, gamma1, gamma2, gamma3, score_func=None):
